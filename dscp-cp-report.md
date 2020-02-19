@@ -3,7 +3,7 @@
 
 ### 1. Introduction/Business Problem
 
-The goal of this project is to analyze location and real estate price data for the city of Vilnius, Lithuania with the goal of drawing insights on real estate investment prospects. This project might be interesting to stakeholders interested in real estate investment within Vilnius. The project concentrates on a limited amount of data and the author has limited knowledge within the area, so the results might not necessarily reflect the true picture. Hopefully this project can provide an additional point of view into this problem.
+The goal of this project is to analyze location and real estate price data for the city of Vilnius, Lithuania with the goal of drawing insights on real estate investment prospects. This project might be interesting to stakeholders interested in real estate investment within Vilnius – simple data is used to create a high-level overview about Vilnius, which might be interesting. The project concentrates on a limited amount of data and the author has limited knowledge within the area, so the results might not necessarily reflect the true picture, though. Hopefully this project can provide an additional point of view into this topic.
 
 ### 2. Data
 

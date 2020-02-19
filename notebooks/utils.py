@@ -1,16 +1,17 @@
 import requests
 import pandas as pd
 import numpy as np
+import itertools
 
 CLIENT_ID = ''
 CLIENT_SECRET = ''
 VERSION = ''
 
 
-def get_nearby_venues(names, latitudes, longitudes, radius=500):
+def get_nearby_venues(names, latitudes, longitudes, radiuses=itertools.repeat(500)):
     """Reusing function provided in one of the Data Science Professional Certificate lab assignments"""
     venues_list = []
-    for name, lat, lng in zip(names, latitudes, longitudes):
+    for name, lat, lng, radius in zip(names, latitudes, longitudes, radiuses):
         print(name)
 
         # create the API request URL
