@@ -5,7 +5,6 @@ import numpy as np
 CLIENT_ID = ''
 CLIENT_SECRET = ''
 VERSION = ''
-LIMIT = 50
 
 
 def get_nearby_venues(names, latitudes, longitudes, radius=500):
@@ -15,14 +14,13 @@ def get_nearby_venues(names, latitudes, longitudes, radius=500):
         print(name)
 
         # create the API request URL
-        url = 'https://api.foursquare.com/v2/venues/explore?&client_id={}&client_secret={}&v={}&ll={},{}&radius={}&limit={}'.format(
+        url = 'https://api.foursquare.com/v2/venues/explore?&client_id={}&client_secret={}&v={}&ll={},{}&radius={}'.format(
             CLIENT_ID,
             CLIENT_SECRET,
             VERSION,
             lat,
             lng,
-            radius,
-            LIMIT)
+            radius)
 
         # make the GET request
         results = requests.get(url).json()["response"]['groups'][0]['items']
